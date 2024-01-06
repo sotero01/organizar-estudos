@@ -1,0 +1,58 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #343f66, rgb(71, 104, 162));
+}
+
+header {
+    background-color: #5f6382;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    padding: 20px;
+}
+
+#days {
+    display: flex;
+    justify-content: space-around;
+}
+
+.day {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 150px;
+    margin: 10px;
+    cursor: pointer;
+   background-color: #4c6390;
+}
+
+.activities {
+    display: flex;
+    flex-direction: column; /* Atualizado para exibir verticalmente */
+    gap: 5px;
+}
+
+.task {
+    border: 1px solid #ddd;
+    padding: 5px;
+    cursor: pointer;
+    max-width: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.task:hover {
+    background-color: #f5f5f5;
+}
+
+.delete-btn {
+    cursor: pointer;
+}
